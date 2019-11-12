@@ -7,11 +7,10 @@ public class Conta {
 	protected Double valor;
 	protected String dataVencimento;
 	protected Fornecedor fornecedor;
-	
-	
-
 	protected SituacaoConta situacaoConta;
 	protected Cliente cliente;
+	
+	
 	
 	public void ContaPagar() {
 		this.situacaoConta = SituacaoConta.PENDENTE;
