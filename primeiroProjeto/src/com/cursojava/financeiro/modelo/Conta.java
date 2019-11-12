@@ -7,6 +7,9 @@ public class Conta {
 	protected Double valor;
 	protected String dataVencimento;
 	protected Fornecedor fornecedor;
+	
+	
+
 	protected SituacaoConta situacaoConta;
 	protected Cliente cliente;
 	
@@ -60,6 +63,14 @@ public class Conta {
 	
 	public SituacaoConta getSituacaoConta() {
 		return this.situacaoConta;
+	}
+	
+	public Cliente getCliente() {
+		return cliente;
+	}
+
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
 	}
 
 }
