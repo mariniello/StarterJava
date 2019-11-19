@@ -1,6 +1,6 @@
 package com.cursojava.financeiro.modelo;
 
-public class Conta {
+public abstract class Conta {
 
 
 	protected String descricao;
@@ -10,19 +10,25 @@ public class Conta {
 	protected SituacaoConta situacaoConta;
 	protected Cliente cliente;
 	
-	
+	public abstract void exibirDetalhes();
 	
 	public void ContaPagar() {
 		this.situacaoConta = SituacaoConta.PENDENTE;
 	}
 	
-	public void cancelar() {
+	public void cancelar() throws OperacaoContaException {
 		if (SituacaoConta.PAGA.equals(this.getSituacaoConta())) {
-			System.out.println("Não pode cancelar uma conta que já foi paga: " 
-				+ this.getDescricao() + ".");
+			
+			throw new OperacaoContaException("Não pode cancelar uma conta que já foi paga");
+			
+//			System.out.println("Não pode cancelar uma conta que já foi paga: " 
+//				+ this.getDescricao() + ".");
 		} else if (SituacaoConta.CANCELADA.equals(this.getSituacaoConta())) {
-			System.out.println("Não pode cancelar uma conta que já foi cancelada: " 
-				+ this.getDescricao() + ".");
+			
+			throw new OperacaoContaException("Conta já foi cancelada!");
+			
+//			System.out.println("Não pode cancelar uma conta que já foi cancelada: " 
+//				+ this.getDescricao() + ".");
 		} else {
 			System.out.println("Cancelando conta " + this.getDescricao() + ".");
 			
