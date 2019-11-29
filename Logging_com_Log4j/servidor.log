@@ -1,0 +1,17 @@
+2019-11-29 16:12:28,012 INFO main modelo.ExemploSalvandoCliente - Iniciando a aplicação
+2019-11-29 16:12:28,016 DEBUG main dao.ClienteDAO - Salvando o cliente: Cliente [nome=João]
+2019-11-29 16:12:28,017 DEBUG main dao.ClienteDAO - Cliente salvo com sucesso.
+2019-11-29 16:12:28,017 DEBUG main dao.ClienteDAO - Salvando o cliente: null
+2019-11-29 16:12:28,017 DEBUG main dao.ClienteDAO - Cliente salvo com sucesso.
+2019-11-29 16:12:28,017 INFO main modelo.ExemploSalvandoCliente - Finalizando a aplicação.
+2019-11-29 16:16:32,570 INFO main modelo.ExemploSalvandoCliente - Iniciando a aplicação
+2019-11-29 16:16:32,574 INFO main modelo.ExemploSalvandoCliente - Finalizando a aplicação.
+2019-11-29 16:21:42,333 INFO main modelo.ExemploSalvandoCliente - Iniciando a aplicação
+2019-11-29 16:21:42,337 WARN main dao.ClienteDAO - Cliente está nulo.
+2019-11-29 16:21:42,337 INFO main modelo.ExemploSalvandoCliente - Finalizando a aplicação.
+INFO main modelo.ExemploSalvandoCliente - Iniciando a aplicação
+WARN main dao.ClienteDAO - Cliente está nulo.
+INFO main modelo.ExemploSalvandoCliente - Finalizando a aplicação.
+2019-11-29 16:41:14,303 INFO main modelo.ExemploSalvandoCliente - Iniciando a aplicação
+2019-11-29 16:41:14,307 WARN main dao.ClienteDAO - Cliente está nulo.
+2019-11-29 16:41:14,307 INFO main modelo.ExemploSalvandoCliente - Finalizando a aplicação.
